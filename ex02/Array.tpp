@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 17:10:58 by mlarra            #+#    #+#             */
-/*   Updated: 2022/11/09 13:27:58 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/11/09 17:32:11 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ Array<T>::Array(): arr(0), size(0)
 template <typename T>
 Array<T>	&Array<T>::operator=(const Array<T> &rhs)
 {
-	if (arr)
-		delete [] arr;
 	size = rhs.size;
 	arr = new T[size];
 	for (int i = 0; i < size; i++)
@@ -85,7 +83,7 @@ void	Array<T>::display() const
 		// std::cout << display(i) << std::endl;
 		std::cout << arr[i] << "; ";
 	}
-	std::cout << std::endl;
+	std::cout << "\n===============" << std::endl;
 }
 
 #endif
