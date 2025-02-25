@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 17:10:58 by mlarra            #+#    #+#             */
-/*   Updated: 2022/11/09 17:32:11 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/11/10 00:05:51 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,6 @@ T	&Array<T>::operator[](const unsigned int index)
 		return (arr[index]);
 }
 
-// template <typename T>
-// void	Array<T>::display(unsigned int index) const
-// {
-// 	T	&temp = operator[](index);
-// 	std::cout << "array[" << index << "] = " << temp << std::endl;
-// }
-
 template <typename T>
 void	Array<T>::display() const
 {
@@ -80,7 +73,6 @@ void	Array<T>::display() const
 	}
 	for (unsigned int i = 0; i < size; i++)
 	{
-		// std::cout << display(i) << std::endl;
 		std::cout << arr[i] << "; ";
 	}
 	std::cout << "\n===============" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: mlarra <mlarra@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:36:31 by mlarra            #+#    #+#             */
-/*   Updated: 2022/11/09 17:32:15 by mlarra           ###   ########.fr       */
+/*   Updated: 2022/11/10 00:05:40 by mlarra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ public:
 	Array(unsigned int);
 	unsigned int	getSize() const;
 	T	&operator[](const unsigned int);
-	// void	display(unsigned int) const;
 	void	display() const;
 };
 
